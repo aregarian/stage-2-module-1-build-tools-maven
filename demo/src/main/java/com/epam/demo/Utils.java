@@ -1,10 +1,14 @@
-package com.epam.demo;
+// src/main/java/com/example/utils/StringUtils.java
 
-import java.util.List;
+package com.example.utils;
 
-public class Utils {
-    public static boolean isAllPositiveNumbers(List<String> args) {
-       //magic happens here
-        return false;
+public class StringUtils {
+    public static boolean isPositiveNumber(String str) {
+        try {
+            double value = Double.parseDouble(str);
+            return value > 0;
+        } catch (NumberFormatException e) {
+            return false;
+        }
     }
 }
