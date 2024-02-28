@@ -15,9 +15,8 @@
 
     <properties>
         <junit.version>5.8.1</junit.version>
-        <maven.jar.plugin.version>2.2</maven.jar.plugin.version>
-        <maven.compiler.plugin.version>2.2</maven.compiler.plugin.version>
-        <maven.surefire.plugin.version>2.22.2</maven.surefire.plugin.version>
+        <maven.compiler.source>7</maven.compiler.source>
+        <maven.compiler.target>7</maven.compiler.target>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -29,20 +28,23 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>${maven.surefire.plugin.version}</version>
+                <!-- something should be here-->
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.2.0</version>
+                <executions>
+                    <execution>
+                        <id>auto-clean</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
             </plugin>
-<!--            <plugin>-->
-<!--                <artifactId>maven-clean-plugin</artifactId>-->
-<!--                <version>3.2.0</version>-->
-<!--            </plugin>-->
         </plugins>
     </build>
 </project>
-
-

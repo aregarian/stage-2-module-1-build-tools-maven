@@ -10,18 +10,17 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>utils</groupId>
-    <artifactId>org.example</artifactId>
-    <version>1.0</version>
+    <groupId>com.example.utils</groupId>
+    <artifactId>utils</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
         <!-- something should be here-->
-        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.12.0</version>
+            <version>3.10</version>
         </dependency>
 
 
