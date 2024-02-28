@@ -6,6 +6,6 @@ import java.util.List;
 
 public class  Utils {
     public static boolean isAllPositiveNumbers(List<String > str) {
-        return true;
+        return false;
     }
 }
